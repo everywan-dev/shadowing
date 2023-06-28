@@ -40,5 +40,8 @@ Please include these instructions in your GitHub repository to ensure a complete
 
 Here are the commands to accomplish these final steps:
 
-```Enable-PSRemoting -Force
-Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value "*" -Force```
+### PSRemoting
+```Enable-PSRemoting -Force```
+
+### TrustedHosts
+```Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value "*" -Force```
