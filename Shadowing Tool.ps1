@@ -5,7 +5,7 @@ $form.Text = "Shadowing Tool"
 $form.Width = 300
 
 $serverLabel = New-Object System.Windows.Forms.Label
-$serverLabel.Text = "Servidor:"
+$serverLabel.Text = "Server:"
 $serverLabel.Location = New-Object System.Drawing.Point(10, 20)
 $serverLabel.Width = 70
 
@@ -15,7 +15,7 @@ $serverComboBox.Location = New-Object System.Drawing.Point(90, 20)
 $serverComboBox.Width = 180
 
 $sessionIdLabel = New-Object System.Windows.Forms.Label
-$sessionIdLabel.Text = "ID de sesión:"
+$sessionIdLabel.Text = "Session ID:"
 $sessionIdLabel.Location = New-Object System.Drawing.Point(10, 60)
 $sessionIdLabel.Width = 70
 
@@ -25,7 +25,7 @@ $sessionIdComboBox.Location = New-Object System.Drawing.Point(90, 60)
 $sessionIdComboBox.Width = 180
 
 $startButton = New-Object System.Windows.Forms.Button
-$startButton.Text = "Iniciar Shadowing"
+$startButton.Text = "Run Shadowing"
 $startButton.Location = New-Object System.Drawing.Point(90, 100)
 $startButton.Width = 120
 $startButton.Add_Click({
@@ -34,7 +34,7 @@ $startButton.Add_Click({
     $server = $serverComboBox.SelectedItem.ToString()
     $command = "mstsc /v:$server /shadow:$sessionId /noConsentPrompt /Prompt /multimon /f /admin"
     Start-Process -FilePath "cmd.exe" -ArgumentList "/c", $command
-    [System.Windows.Forms.MessageBox]::Show("El shadowing ha sido iniciado correctamente.")
+    [System.Windows.Forms.MessageBox]::Show("The shadowing has been successfully initiated.")
 })
 
 $form.Controls.Add($serverLabel)
