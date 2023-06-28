@@ -32,11 +32,11 @@ The code allows users to select a server and a session ID, and then initiate sha
 
 ## Changes for your organization
 
-* 1. Update lines 91 to 94 with the DNS and hostname of your Azure AVD infrastructure. If you cannot reach the resources via DNS, you can use IP addresses instead. However, it is crucial that you have network visibility within the AVD environment. We strongly recommend setting up internal routing using an Azure VPN for this process. Under no circumstances should it be done through public access, as the code is not prepared for it.**
+1. Update lines 91 to 94 with the DNS and hostname of your Azure AVD infrastructure. If you cannot reach the resources via DNS, you can use IP addresses instead. However, it is crucial that you have network visibility within the AVD environment. We strongly recommend setting up internal routing using an Azure VPN for this process. Under no circumstances should it be done through public access, as the code is not prepared for it.**
 
-* 2. Modify line 107 with the credentials of your local AVD session host machines.
+2. Modify line 107 with the credentials of your local AVD session host machines.
 
-* 3. Finally, to ensure proper functionality, it is necessary to enable PSRemoting on both the local machine and the server, and add TrustedHosts on both as well.**
+3. Finally, to ensure proper functionality, it is necessary to enable PSRemoting on both the local machine and the server, and add TrustedHosts on both as well.
 
 ## Final Setup Commands
 
