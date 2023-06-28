@@ -2,7 +2,7 @@
 Shadowing AVD Servers with noConsentprompt
 
 
-## EXPLAIN THE PS1
+## Explain the PS1
 
 **This code is written in PowerShell and creates a simple GUI application using Windows Forms. The application is a "Shadowing Tool" used for remote desktop session shadowing. Here's a line-by-line explanation:**
 
@@ -30,7 +30,7 @@ Add-Type -AssemblyName System.Windows.Forms: Adds the System.Windows.Forms assem
 The code allows users to select a server and a session ID, and then initiate shadowing by clicking the "Start Shadowing" button. It provides a basic graphical interface for the shadowing tool.**
 
 
-## CHANGES FOR YOUR ORGANIZATION
+## Changes for your organization
 
 * 1. Update lines 91 to 94 with the DNS and hostname of your Azure AVD infrastructure. If you cannot reach the resources via DNS, you can use IP addresses instead. However, it is crucial that you have network visibility within the AVD environment. We strongly recommend setting up internal routing using an Azure VPN for this process. Under no circumstances should it be done through public access, as the code is not prepared for it.**
 
@@ -38,7 +38,7 @@ The code allows users to select a server and a session ID, and then initiate sha
 
 * 3. Finally, to ensure proper functionality, it is necessary to enable PSRemoting on both the local machine and the server, and add TrustedHosts on both as well.**
 
-## Local commands to set usage 
+## Final Setup Commands
 
 Here are the commands to accomplish these final steps:
 
