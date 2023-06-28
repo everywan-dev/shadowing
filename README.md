@@ -38,7 +38,7 @@ The code allows users to select a server and a session ID, and then initiate sha
 
 * 3. Finally, to ensure proper functionality, it is necessary to enable PSRemoting on both the local machine and the server, and add TrustedHosts on both as well.**
 
-Please include these instructions in your GitHub repository to ensure a complete and successful setup.
+## Local commands to set usage 
 
 Here are the commands to accomplish these final steps:
 
