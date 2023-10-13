@@ -32,7 +32,7 @@ $startButton.Add_Click({
     $selection = $sessionIdComboBox.SelectedItem.ToString()
     $username, $sessionId = $selection.Split(' - ')
     $server = $serverComboBox.SelectedItem.ToString()
-    $command = "mstsc /v:$server /shadow:$sessionId /noConsentPrompt /Prompt /multimon /f /admin"
+    $command = "mstsc /v:$server /shadow:$sessionId /noConsentPrompt /Control /Prompt /multimon /f /admin"
     Start-Process -FilePath "cmd.exe" -ArgumentList "/c", $command
     [System.Windows.Forms.MessageBox]::Show("The shadowing has been successfully initiated.")
 })
